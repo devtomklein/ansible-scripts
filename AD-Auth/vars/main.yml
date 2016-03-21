@@ -1,0 +1,11 @@
+---
+# defaults file for ad-auth
+ntp_srv: ntp.example.com
+
+krb_realm: REALM.LOCAL
+krb_kdc: ad.srv.local
+krb_admin_svr: ad.srv.local
+
+smb_workgroup: ORG
+smb_password_server: srv1.realm.local srv2.realm.local
+smb_realm: {{ krb_realm }}
